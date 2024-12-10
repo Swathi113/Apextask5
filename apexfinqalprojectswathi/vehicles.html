@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Listing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="todo.html">To-Do List</a></li>
+        <li><a href="vehicles.html" class="active">Vehicle Listing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="filters">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="cars">Cars</option>
+        <option value="bikes">Bikes</option>
+      </select>
+
+      <label for="sort">Sort:</label>
+      <select id="sort">
+        <option value="price">Price: Low to High</option>
+        <option value="rating">Rating: High to Low</option>
+      </select>
+    </div>
+
+    <div id="product-grid" class="product-grid">
+      <!-- Vehicle 1 -->
+      <div class="product-card" data-category="cars" data-price="20000" data-rating="4.7">
+        <img src="https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg?auto=compress&cs=tinysrgb&w=600" width="300" alt="Sedan">
+        <h3>Luxury Sedan</h3>
+        <p>Price: $20,000</p>
+        <p>Rating: 4.7 ⭐</p>
+      </div>
+
+      <!-- Vehicle 2 -->
+      <div class="product-card" data-category="cars" data-price="35000" data-rating="4.8">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYw4fBRDXLFOsJJgXa_tlx_NWrPZFgNnOVOg&s" alt="SUV">
+        <h3>Family SUV</h3>
+        <p>Price: $35,000</p>
+        <p>Rating: 4.8 ⭐</p>
+      </div>
+
+      <!-- Vehicle 3 -->
+      <div class="product-card" data-category="cars" data-price="60000" data-rating="4.9">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_eKiPN8JCR9DWRrs0T01QX2edFxwXL0GcA&s" alt="Sports Car">
+        <h3>Sports Car</h3>
+        <p>Price: $60,000</p>
+        <p>Rating: 4.9 ⭐</p>
+      </div>
+
+      <!-- Vehicle 4 -->
+      <div class="product-card" data-category="bikes" data-price="1500" data-rating="4.4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPo34QVdHc6F9HLblYkvC9AkJEDwZoG956GGSzLp3InhCTI4IqJDDZwbvF7tUI8xTTsQU&usqp=CAU" alt="Mountain Bike">
+        <h3>Mountain Bike</h3>
+        <p>Price: $1,500</p>
+        <p>Rating: 4.4 ⭐</p>
+      </div>
+
+      <!-- Vehicle 5 -->
+      <div class="product-card" data-category="bikes" data-price="2000" data-rating="4.5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS53xS7cAd5GCTW7RlHO0DLQhWNPmgaJz43w&s" alt="Electric Bike">
+        <h3>Electric Bike</h3>
+        <p>Price: $2,000</p>
+        <p>Rating: 4.5 ⭐</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sravani Lankalapalli. All rights reserved.</p>
+  </footer>
+
+  <script src="vehicles.js"></script>
+</body>
+</html>

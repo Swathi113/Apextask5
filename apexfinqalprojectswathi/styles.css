@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #007bff;
+  }
+  
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+    text-align: center;
+    color: black;
+  }
+
+  
+  /* Styling for the motivational image section */
+  .image-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .image-section img {
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-section p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+  }
+
+  /* project grid */
+ .project-card ul li {
+    text-align: center;
+    list-style-type: none;
+
+  }
+
+  /* Product Container */
+.product-container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .filter-sort {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-sort input,
+  .filter-sort select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+/* Filter and Sort Section */
+.filter-sort {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-sort label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.filter-sort select,
+.filter-sort input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Product Grid and Cards */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.product-details {
+  padding: 16px;
+}
+
+.product-details h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+.product-details .price {
+  color: #28a745;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 10px 15px;
+  background: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* todo section */
+.todo-container{
+  width: 1200px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding-left: 350px;
+}
+
+/* Contact Section */
+.contact-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+button.btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 10px;
+  }
+
+  .contact-section h1 {
+    font-size: 2rem;
+  }
+  .todo-container {
+    max-width: 100%;
+    padding: 10px;
+    margin: 20px;
+  }
+} 
+  
+  
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+  }
+  
